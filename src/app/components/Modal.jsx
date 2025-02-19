@@ -9,7 +9,7 @@ export default function Modal({ children, onClose }) {
 
   const handleClose = () => {
     setIsVisible(false);
-    setTimeout(onClose, 300); // Adjust the timeout to match the transition duration
+    setTimeout(onClose, 300);
   };
 
   return (

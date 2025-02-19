@@ -21,7 +21,7 @@ User Story: As a Sandbox applicant, I want a better, more convenient way to host
 ---
 # My Review (February 17 2025)
   * Blockers
-    - Nori passed away on sunday and I went to help with Wendy's greiving.
+    - Partner's rabbit passed away, spent time greiving.
     - Valentines dinner date on Friday (2-14) evening
 
   * Issues

@@ -27,7 +27,7 @@ export default function AddEventForm({ onAddEvent, onClose }) {
     setTime('');
     setDescription('');
     setHost('');
-    onClose(); // Close the modal after adding an event
+    onClose();
   };
 
   return (

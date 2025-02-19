@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Your Practice Weekend Hackathon
+## - You have 48 Hours (Starting: 11 AM Friday) - (Ending: 11 AM Sunday)
+## - Prompt: Create an web app that serves as an addition to Sandbox
 
-## Getting Started
+User Story: As a Sandbox applicant, I want a better, more convenient way to host and share my Sandbox meetup.
 
-First, run the development server:
+* My MVP: A website that allows Sandbox applicants to easily share and host spontaneous events.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  - It needs to have some kind of authentication
+    * Ideally with something like access to Sandbox Education User Data
+    * Possibly with school email verification (Possibly through Azure Entra ID, though this applies specifically to UVU students because I am not sure what authentication BYU, USU, etc. are using).
+    
+  - It needs to display events.
+    * It needs to show things like: Date, Time, Location, Event Host, etc.
+    * It should display events to users regardless of auth as a UX feature.
+    * It should encourage users to log in. It should give users more inter-activity by signing in.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  - It should allow for authenticated users to create and host events
+    * A form that allows users to create events to be stored in the back-end (Emergency: you could also store it front-end as JSON)

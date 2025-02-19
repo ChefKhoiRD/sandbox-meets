@@ -1,4 +1,3 @@
-// components/LoginButton.jsx
 import { useEffect, useState } from 'react';
 import { account } from '@/lib/appwrite';
 

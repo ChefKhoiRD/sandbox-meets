@@ -1,6 +1,4 @@
-// components/ProtectedRoute.jsx
 import { useEffect } from 'react';
-import { useRouter } from 'next/router'; // Remove this line if not using useRouter
 import { account } from '@/lib/appwrite';
 
 const ProtectedRoute = ({ children }) => {
@@ -10,7 +8,7 @@ const ProtectedRoute = ({ children }) => {
         await account.get();
       } catch (error) {
         console.error('User is not authenticated:', error);
-        window.location.href = '/login'; // Redirect to login page if not authenticated
+        window.location.href = '/login';
       }
     };
 

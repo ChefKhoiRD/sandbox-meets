@@ -62,7 +62,7 @@ export default function Home() {
       if (res.ok) {
         const data = await res.json();
         setEvents([...events, data]);
-        setShowForm(false); // Hide the form after adding an event
+        setShowForm(false);
       } else {
         console.error('Failed to add event');
       }
